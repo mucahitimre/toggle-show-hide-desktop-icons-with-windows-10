@@ -3,15 +3,22 @@ An autohotkey script, windows scheduler and hotkey that toggles windows 10 with 
 
 # Autohotkey script
 - [WindowsIconsHideShow.ahk](../main/WindowsIconsHideShow.ahk) file view
-```
-<#w:: 
-If (toggle := !toggle)
-	Control, Hide,, SysListView321, ahk_class WorkerW
+``` ahk
+F4:: 
+if (viewStatus != 2 && viewStatus := 1)
+{
+    Control, show ,, SysListView321, ahk_class Progman
+    viewStatus = 2
+}
 else
-	Control, Show,, SysListView321, ahk_class WorkerW
+{
+    Control, hide ,, SysListView321, ahk_class Progman
+    viewStatus = 1
+}
 return
 ```
-`<#w::` here we specify when it will be triggered by a key combination `win + w`
+`F4::` here we specify when it will be triggered by a key combination `F4`
+`viewStatus` to understand the changing situation.
 
 # Windows task scheduler
 
