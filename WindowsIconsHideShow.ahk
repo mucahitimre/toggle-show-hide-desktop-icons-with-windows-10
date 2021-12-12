@@ -1,11 +1,11 @@
 ﻿F4:: 
-if (MyNumber != 2 && MyNumber := 1)
+if (viewStatus != 2 && viewStatus := 1)
 {
     Control, show ,, SysListView321, ahk_class Progman
-    MyNumber = 2
+    viewStatus = 2
 }else
 {
     Control, hide ,, SysListView321, ahk_class Progman
-    MyNumber = 1
+    viewStatus = 1
 }
 return
