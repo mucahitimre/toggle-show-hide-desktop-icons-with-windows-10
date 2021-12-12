@@ -23,7 +23,7 @@ return
 # Windows task scheduler
 
 1. Create a new task.
-2. Name the task and make sure it runs with Administrator privilege.
+2. Name the task and make sure the security settings are correct.
 3. New create "at startup" and "at log on" triggers from the Triggers tab.
 4. From the Actions tab, you can select the script(`.ahk`) or the `.exe` file that you can create with scirpt.
 5. A task has been set up that will automatically start the shortcut when your computer boots up.. good job :)
