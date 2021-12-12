@@ -3,7 +3,8 @@ if (viewStatus != 2 && viewStatus := 1)
 {
     Control, show ,, SysListView321, ahk_class Progman
     viewStatus = 2
-}else
+}
+else
 {
     Control, hide ,, SysListView321, ahk_class Progman
     viewStatus = 1
