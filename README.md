@@ -22,14 +22,17 @@ return
 `F4::` here we specify when it will be triggered by a key combination `F4`
 `viewStatus` to understand the changing situation.
 
-# Windows task scheduler
+# Windows task scheduler or Startup folder
 
-1. Create a new task.
-2. Name the task and make sure the security settings are correct.
-3. New create "at startup" and "at log on" triggers from the Triggers tab.
-4. From the Actions tab, you can select the script(`.ahk`) or the `.exe` file that you can create with scirpt.
-5. A task has been set up that will automatically start the shortcut when your computer boots up.. good job :)
-
+- Windows task scheduler
+    1. Create a new task.
+    2. Name the task and make sure the security settings are correct.
+    3. New create "at startup" and "at log on" triggers from the Triggers tab.
+    4. From the Actions tab, you can select the script(`.ahk`) or the `.exe` file that you can create with scirpt.
+    5. A task has been set up that will automatically start the shortcut when your computer boots up.. good job :)
+- Startup folder
+    1. `C:\Users\Username\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup` this windows startup folder.
+    2. If we create a shortcut of the applications that windows will run at startup to this folder, windows will automatically run this application at startup, Don't forget to replace `Username` with yours :)
 
 # References and other resources
 - https://www.howtogeek.com/409581/how-to-write-an-autohotkey-script/
